@@ -87,31 +87,38 @@
     keyUp(Key.CTRL)
 
 
+sleep_time = <span class="dig">2</span>
 
-<span class="skw">sleep</span>(<span class="dig">3</span>)
+<span class="skw">sleep</span>(<span class="dig">5</span>)
 
-<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>, <span class="dig">5</span>):
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>, <span class="dig">10</span>):
     previous_tab()
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">sleep</span>(sleep_time)
     <span class="cmt">#rightClick(Pattern("1536713727981.png").targetOffset(14,-19))</span>
-    <span class="skw">rightClick</span>(Pattern(<img src="1537606554951.png" />).targetOffset(-<span class="dig">6</span>,-<span class="dig">67</span>))
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#rightClick(Pattern("1537606554951.png").targetOffset(-6,-67))</span>
+    <span class="skw">rightClick</span>(Pattern(<img src="1537680653361.png" />).similar(<span class="dig">0.81</span>).targetOffset(<span class="dig">0</span>,<span class="dig">900</span>))
+    <span class="skw">sleep</span>(sleep_time)
     <span class="cmt">#click("1536713781636.png")</span>
-    <span class="skw">click</span>(<img src="1537606634066.png" />)
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
-    keyDown(Key.CTRL)
+    <span class="cmt">#click("1537606634066.png")</span>
+    <span class="skw">click</span>(<img src="1537680825504.png" />)
+    <span class="skw">sleep</span>(sleep_time)
+    <span class="cmt">#keyDown(Key.CTRL)</span>
+    keyDown(Key.CMD)
     <span class="skw">type</span>(<span class="str">"w"</span>)
-    keyUp(Key.CTRL)
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#keyUp(Key.CTRL)</span>
+    keyUp(Key.CMD)
+    <span class="skw">sleep</span>(<span class="dig">5</span>)
     <span class="cmt"># next_tab()</span>
-    keyDown(Key.CTRL)
+    <span class="cmt">#keyDown(Key.CTRL)</span>
+    keyDown(Key.CMD)
     <span class="skw">type</span>(<span class="str">"v"</span>)
-    keyUp(Key.CTRL)
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#keyUp(Key.CTRL)</span>
+    keyUp(Key.CMD)
+    <span class="cmt">#sleep(sleep_time)</span>
     <span class="skw">type</span>(Key.ENTER)
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#sleep(sleep_time) </span>
     <span class="skw">type</span>(Key.ENTER)
-    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="skw">sleep</span>(sleep_time)
 </pre>
 </body>
 </html>
