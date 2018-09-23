@@ -90,10 +90,14 @@
 
 <span class="skw">sleep</span>(<span class="dig">3</span>)
 
-<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>, <span class="dig">10</span>):
+<span class="kw">for</span> i <span class="kw">in</span> range(<span class="dig">0</span>, <span class="dig">5</span>):
     previous_tab()
-    <span class="skw">rightClick</span>(Pattern(<img src="1536713727981.png" />).targetOffset(<span class="dig">14</span>,-<span class="dig">19</span>))
-    <span class="skw">click</span>(<img src="1536713781636.png" />)
+    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#rightClick(Pattern("1536713727981.png").targetOffset(14,-19))</span>
+    <span class="skw">rightClick</span>(Pattern(<img src="1537606554951.png" />).targetOffset(-<span class="dig">6</span>,-<span class="dig">67</span>))
+    <span class="skw">sleep</span>(<span class="dig">1</span>)
+    <span class="cmt">#click("1536713781636.png")</span>
+    <span class="skw">click</span>(<img src="1537606634066.png" />)
     <span class="skw">sleep</span>(<span class="dig">1</span>)
     keyDown(Key.CTRL)
     <span class="skw">type</span>(<span class="str">"w"</span>)
@@ -103,8 +107,9 @@
     keyDown(Key.CTRL)
     <span class="skw">type</span>(<span class="str">"v"</span>)
     keyUp(Key.CTRL)
-    <span class="cmt"># sleep(1)</span>
+    <span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
+    <span class="skw">sleep</span>(<span class="dig">1</span>)
     <span class="skw">type</span>(Key.ENTER)
     <span class="skw">sleep</span>(<span class="dig">1</span>)
 </pre>
